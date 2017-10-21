@@ -88,6 +88,7 @@ menu:
   #about: /about/ || user
   #tags: /tags/ || tags
   #categories: /categories/ || th
+  program: /categories/program || th
   archives: /archives/ || archive
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
@@ -432,14 +433,14 @@ gitment:
 #           Evernote,Friendfeed,Vkontakte,Odnoklassniki,Mailru
 needmoreshare2:
   enable: false
-  postbottom: 
+  postbottom:
     enable: false
     options:
       iconStyle: box
       boxForm: horizontal
       position: bottomCenter
       networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook
-  float: 
+  float:
     enable: false
     options:
       iconStyle: box
