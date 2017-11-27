@@ -86,7 +86,9 @@ index_with_subtitle: false
 menu:
   home: / || home
   #about: /about/ || user
+  #tags: /tags/ || tags
   tags: /tags/ || tags
+  shoes: /tags/shoes || tags
   #categories: /categories/ || th
   archives: /archives/ || archive
   #schedule: /schedule/ || calendar
