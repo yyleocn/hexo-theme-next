@@ -1,5 +1,5 @@
 {% extends '_layout.swig' %}
-{% import '_macro/post-collapse.swig' as post_template %}
+{% import '_macro/post-img.swig' as post_template %}
 {% import '_macro/sidebar.swig' as sidebar_template %}
 
 {% block title %}{{ __('title.tag') }}: {{ page.tag }} | {{ config.title }}{% endblock %}
@@ -20,7 +20,7 @@
       </div>
 
       {% for post in page.posts %}
-        {{ post_template.render(post) }}
+        {{ post_template.render(post,true) }}
       {% endfor %}
     </div>
 
