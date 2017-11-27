@@ -20,7 +20,7 @@
       </div>
 
       {% for post in page.posts %}
-        {{ post_template.render(post,true) }}
+        {{ post_template.render(post,true,'test') }}
       {% endfor %}
     </div>
 
