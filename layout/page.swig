@@ -18,14 +18,14 @@
 {% block content %}
 
   <div id="posts" class="posts-expand">
-    {##################}
+
     {### PAGE BLOCK ###}
-    {##################}
+
     <div class="post-block page">
       {% include '_partials/page-header.swig' %}
-      {#################}
+
       {### PAGE BODY ###}
-      {#################}
+
       <div class="post-body{% if theme.han %} han-init-context{% endif %}{% if page.direction && page.direction.toLowerCase() === 'rtl' %} rtl{% endif %}">
         {# tagcloud page support #}
         {% if page.type === "tags" %}
@@ -50,13 +50,13 @@
           {{ page.content }}
         {% endif %}
       </div>
-      {#####################}
+
       {### END PAGE BODY ###}
-      {#####################}
+
     </div>
-    {######################}
+
     {### END PAGE BLOCK ###}
-    {######################}
+
   </div>
 
 {% endblock %}

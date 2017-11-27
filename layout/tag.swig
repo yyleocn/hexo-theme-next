@@ -6,9 +6,9 @@
 
 {% block content %}
 
-  {#################}
+
   {### TAG BLOCK ###}
-  {#################}
+
   <div class="post-block tag">
 
     <div id="posts" class="posts-collapse">
@@ -25,9 +25,9 @@
     </div>
 
   </div>
-  {#####################}
+
   {### END TAG BLOCK ###}
-  {#####################}
+
 
   {% include '_partials/pagination.swig' %}
 {% endblock %}

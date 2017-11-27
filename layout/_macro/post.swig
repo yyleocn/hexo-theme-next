@@ -11,9 +11,9 @@
   {% endif %}
 
   <article class="{{ post_class }}" itemscope itemtype="http://schema.org/Article">
-  {##################}
+
   {### POST BLOCK ###}
-  {##################}
+
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="{{ config.url }}{{ url_for(post.path) }}">
 
@@ -167,15 +167,16 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-comment-o"></i>
               </span>
-              {% if is_post() %}
-                <a href="{{ url_for(post.path) }}#SOHUCS" itemprop="discussionUrl">
-                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="{{ post.path }}" itemprop="commentsCount"></span>
-                </a>
-              {% else %}
-                <a href="{{ url_for(post.path) }}#SOHUCS" itemprop="discussionUrl">
-                  <span id="url::{{ post.permalink }}" class="cy_cmt_count" data-xid="{{ post.path }}" itemprop="commentsCount" ></span>
-                </a>
-              {% endif %}
+                {% if is_post() %}
+                  <a href="{{ url_for(post.path) }}#SOHUCS" itemprop="discussionUrl">
+                    <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="{{ post.path }}" itemprop="commentsCount"></span>
+                  </a>
+                {% else %}
+                  <a href="{{ url_for(post.path) }}#SOHUCS" itemprop="discussionUrl">
+                    <span id="url::{{ post.permalink }}" class="cy_cmt_count" data-xid="{{ post.path }}" itemprop="commentsCount" ></span>
+                  </a>
+                {% endif %}
+              </span>
             {% elseif is_post() and theme.gitment.enable and theme.gitment.mint and theme.gitment.count %}
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
@@ -255,9 +256,9 @@
       </header>
     {% endif %}
 
-    {#################}
+
     {### POST BODY ###}
-    {#################}
+
     <div class="post-body{% if theme.han %} han-init-context{% endif %}{% if post.direction && post.direction.toLowerCase() === 'rtl' %} rtl{% endif %}" itemprop="articleBody">
 
       {# Gallery support #}
@@ -320,9 +321,9 @@
         {{ post.content }}
       {% endif  %}
     </div>
-    {#####################}
+
     {### END POST BODY ###}
-    {#####################}
+
 
     {% if theme.wechat_subscriber.enabled and not is_index %}
       <div>
@@ -418,9 +419,9 @@
       {% endif %}
     </footer>
   </div>
-  {######################}
+
   {### END POST BLOCK ###}
-  {######################}
+
   </article>
 
 {% endmacro %}

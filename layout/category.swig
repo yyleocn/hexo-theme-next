@@ -6,9 +6,9 @@
 
 {% block content %}
 
-  {######################}
+
   {### CATEGORY BLOCK ###}
-  {######################}
+
   <div class="post-block category">
 
     <div id="posts" class="posts-collapse">
@@ -25,9 +25,9 @@
     </div>
 
   </div>
-  {##########################}
+
   {### END CATEGORY BLOCK ###}
-  {##########################}
+
 
   {% include '_partials/pagination.swig' %}
 

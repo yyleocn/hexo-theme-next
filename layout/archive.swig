@@ -8,9 +8,9 @@
 
 {% block content %}
 
-  {#####################}
+
   {### ARCHIVE BLOCK ###}
-  {#####################}
+
   <div class="post-block archive">
     <div id="posts" class="posts-collapse">
       <span class="archive-move-on"></span>
@@ -49,9 +49,9 @@
 
     </div>
   </div>
-  {#########################}
+
   {### END ARCHIVE BLOCK ###}
-  {#########################}
+
 
   {% include '_partials/pagination.swig' %}
 
